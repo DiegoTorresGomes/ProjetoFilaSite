@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <title>Atendimento Ascenty</title>
+</head>
+<body>
+    <div class="logo">
+        <img src="https://ascenty.com/wp-content/uploads/2021/12/logo-ascenty-2021-branco-e-laranja.png" alt="Logo-Ascenty" title="Logo-Ascenty">
+    </div>
+
+    <div>
+        <h1 id="titulo">INÍCIO DE ATENDIMENTO</h1>
+        <p class="subtitulo">Preencha os campos abaixo com o seu nome completo e qual é o seu tipo de visita, assim conseguiremos iniciar o seu atendimento.</p>
+    </div>
+
+    <form action="https://formsubmit.co/diego.torres@ascenty.com" method="POST">
+        <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
+
+        <fieldset class="grupo">
+            <div class="nome">
+                <label>Nome</label>
+                <input type="text" name="Nome" placeholder="NOME" maxlength="10" minlength="3" required>
+            </div>
+
+            <div class="sobrenome">
+                <label>Sobrenome</label>
+                <input type="text" name="sobrenome" placeholder="SOBRENOME" maxlength="20" minlength="5" required>
+            </div>
+        </fieldset>
+
+        <div class="tipeAt">
+            <label class="textoDeSelec">Selecione abaixo o tipo de visita</label>
+            <select class="selecao" required>
+                <option selected disabled value="">Selecione</option>
+                <option>Cliente</option>
+                <option>Visitante</option>
+                <option>Prestador de Serviços</option>
+                <option>Entrega de Mercadorias</option>
+            </select>
+        </div>
+
+        <button class="button" type="submit">
+            <span class="send">Enviado</span>
+            <i class="ri-send-plane-fill plane"></i>
+            <span class="sent">Enviar</span>
+        </button>
+        
+
+    </form>
+
+
+    
+</body>
+</html>
