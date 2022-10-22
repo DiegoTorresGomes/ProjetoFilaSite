@@ -17,8 +17,7 @@ body{
     font-family: "Raleway";
     background-color: #f6a829;
     max-width: 100%;
-    overflow: hidden;
-    
+    text-decoration: none solid ;
 }
 
 .logo{
@@ -96,6 +95,7 @@ button{
     margin-top: 25px;
     margin-left: 45%;
     margin-right: 45%;
+    transition: all 0.2s ease;
 }
 
 .button{
@@ -107,7 +107,7 @@ button{
     background: #4473c4c0;
     color: #ffffff;
     overflow: hidden;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 500;
     padding: 12px 35px;
     white-space: nowrap;
@@ -145,6 +145,11 @@ button{
     animation: takeOff 1s forwards;
 }
 
+button:hover{
+    transform: scale(1.05);
+}
+
+
 @keyframes reveal{
     100%{
         opacity: 1;
@@ -181,17 +186,17 @@ button{
     }
 }
 
-@media (max-width: 820px){
+@media (max-width: 821px){
     body{
-        max-height: 100%;
-        overflow: hidden;
+        max-height: 98%;
+        overflow:auto;
     }
 
     .logo{
         margin-left: 45px;
         margin-right: 5px;
         margin-top: 10px;
-        width: 100%;
+        width: 90%;
         height: 10%;
         border-radius: 1px 50px 1px 50px;
         background-color: #4472C4;
