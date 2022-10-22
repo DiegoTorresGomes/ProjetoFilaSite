@@ -16,7 +16,6 @@
 body{
     font-family: "Raleway";
     background-color: #f6a829;
-    max-width: 100%;
     text-decoration: none solid ;
 }
 
@@ -28,6 +27,7 @@ body{
 	height: 15%;
     border-radius: 1px 50px 1px 50px;
     background-color: #4472C4;
+    
     
 }
 
@@ -41,6 +41,8 @@ img{
 h1, p{
     margin-top: 20px;
     text-align: center;
+    max-width: 90%;
+    background: red;
 
 }
 
@@ -55,13 +57,14 @@ p{
 
 .grupo{
     margin: 10px auto;
-    width: 50%;
+    width: 40%;
     height: 100px;
     display: flex;
     padding: 20px;
     background-color: #4473c4c0;
     border: 2px solid;
     border-radius: 20px;
+    
 }
 
 .nome{
