@@ -76,11 +76,12 @@ img{
     display: flex;
 }
 .textoDeSelec{
+    width: 50vh;
+    margin: 0 auto;
     text-align: center;
     font-size: 20px;
     display: block;
-    justify-content: center;
-    align-items: center;
+    background: red;
 }
 
 .selecao{
@@ -92,7 +93,6 @@ img{
 
 button{
     margin-top: 25px;
-    
     transition: all 0.2s ease;
 }
 
