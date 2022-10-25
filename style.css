@@ -79,20 +79,21 @@ img{
     width: 50vh;
     margin: 0 auto;
     text-align: center;
+    display:flex;
     font-size: 20px;
-    display: block;
-    background: red;
 }
 
 .selecao{
-    width: 200px;
-    margin-top: 20px;
-    
-    
+    width: 40vh;
+    font-size: 18px;
+    margin: 5px auto;
+    background: red;
+    align-content: center;
+ 
 }
 
 button{
-    margin-top: 25px;
+    margin: 25px auto;
     transition: all 0.2s ease;
 }
 
