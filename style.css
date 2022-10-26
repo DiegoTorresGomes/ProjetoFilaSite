@@ -77,7 +77,7 @@ img{
 }
 .textoDeSelec{
     width: 50vh;
-    margin: 0 auto;
+    margin: 15px auto;
     text-align: center;
     display:flex;
     font-size: 20px;
@@ -86,14 +86,13 @@ img{
 .selecao{
     width: 40vh;
     font-size: 18px;
-    margin: 5px auto;
-    background: red;
+    margin: 5px 86vh;
     align-content: center;
  
 }
 
 button{
-    margin: 25px auto;
+    margin: 30px 92vh;
     transition: all 0.2s ease;
 }
 
@@ -185,18 +184,12 @@ button:hover{
     }
 }
 
-/*  @media (max-width: 820px){
-    body{
-        overflow:hidden;
-        
-    }
-
+@media (max-width: 820px){
     .logo{
+        max-width: 99%;
         margin-left: 45px;
         margin-right: 5px;
         margin-top: 10px;
-        width: 98%;
-        height: 10%;
         border-radius: 1px 50px 1px 50px;
         background-color: #4472C4;
         
@@ -206,7 +199,6 @@ button:hover{
         padding: 8px;
         width: 30vh;
         height: 13vh;
-        margin-left: 30%;
         
     }
     
@@ -217,22 +209,16 @@ button:hover{
     }
     
     h1{
-        max-width: 95%;
-        margin-left: 10%;
         font-size: 50px;
     }
     
     p{
-        max-width: 95%;
-        margin-left: 10%;
         font-size: 20px;
         margin-bottom: 15px;
     }
     
     .grupo{
         margin: 20px;
-        margin-left: 15%;
-        width: 60%;
         height: 100px;
         display: flex;
         padding: 10px;
@@ -256,7 +242,6 @@ button:hover{
     }
     .textoDeSelec{
         margin-top: 20px;
-        margin-left: 10%;
         font-size: 20px;
         display: block;
         justify-content: center;
@@ -267,15 +252,13 @@ button:hover{
     .selecao{
         width: 150px;
         margin-top: 10px;
-        margin-left: 45%;
+       
       
         
     }
 
     button{
         margin-top: 20px;
-        margin-left: 43%;
-        margin-right: 60%;
         transition: all 0.2s ease;
     }
 
@@ -283,4 +266,4 @@ button:hover{
         transform: scale(1.05);
     }
     
-} */
+}
