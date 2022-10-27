@@ -184,12 +184,11 @@ button:hover{
     }
 }
 
-@media (max-width: 820px){
+@media (max-width: 821px){
     .logo{
-        max-width: 99%;
-        margin-left: 45px;
-        margin-right: 5px;
-        margin-top: 10px;
+        width: 150vh;
+        height: 15vh;
+        margin: 5px auto;
         border-radius: 1px 50px 1px 50px;
         background-color: #4472C4;
         
@@ -197,27 +196,15 @@ button:hover{
     
     img{
         padding: 8px;
-        width: 30vh;
+        width: 38vh;
         height: 13vh;
         
     }
+   
     
-    h1, p{
-        margin-top: 20px;
-        text-align: center;
-    
-    }
-    
-    h1{
-        font-size: 50px;
-    }
-    
-    p{
-        font-size: 20px;
-        margin-bottom: 15px;
-    }
     
     .grupo{
+        width: 10vh;
         margin: 20px;
         height: 100px;
         display: flex;
