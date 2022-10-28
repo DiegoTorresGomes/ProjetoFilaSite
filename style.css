@@ -198,10 +198,7 @@ button:hover{
         padding: 8px;
         width: 38vh;
         height: 13vh;
-        
     }
-   
-    
     
     .grupo{
         width: 10vh;
@@ -227,21 +224,18 @@ button:hover{
         display: flex;
         
     }
+
     .textoDeSelec{
         margin-top: 20px;
         font-size: 20px;
         display: block;
         justify-content: center;
         align-items: center;
-        
     }
     
     .selecao{
         width: 150px;
         margin-top: 10px;
-       
-      
-        
     }
 
     button{
