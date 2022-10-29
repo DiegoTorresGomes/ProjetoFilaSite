@@ -186,9 +186,10 @@ button:hover{
 
 @media (max-width: 821px){
     .logo{
-        width: 150vh;
+        display: inline-block;
+        width: 80vh;
         height: 15vh;
-        margin: 5px auto;
+        margin: 5px 10vh;
         border-radius: 1px 50px 1px 50px;
         background-color: #4472C4;
         
@@ -199,43 +200,55 @@ button:hover{
         width: 38vh;
         height: 13vh;
     }
+
+    #titulo{
+        margin: 5px 15vh;
+    }
     
     .subtitulo{
         display: block;
         width: 60vh;
         font-size: 18px;
-        margin: 5px auto;
+        margin: 5px 15vh;
     }
 
     .grupo{
-        margin: 5px auto;
-        width: 10px;
+        display: inline-block;
+        margin: 8px 30vh;
+        width: 30vh;
+        height: 12vh;
         background-color: #4473c4c0;
         border: 2px solid;
         border-radius: 20px;
+        padding: 10px;
+    }
+
+    .nome{
+        width: 50px;
+        margin: 10px 7vh;
+        
     }
     
-    .tipoAt{
-        margin: 0 auto;
-        display: flex;
+    .sobrenome{
+        width: 50px;
+        margin: 10px 7vh;
         
     }
 
     .textoDeSelec{
-        margin-top: 20px;
-        font-size: 20px;
+        margin: 20px 20vh;
+        font-size: 22px;
         display: block;
-        justify-content: center;
-        align-items: center;
+       
     }
     
     .selecao{
         width: 150px;
-        margin-top: 10px;
+        margin: 10px 38vh;
     }
 
     button{
-        margin-top: 20px;
+        margin: 15px 36.5vh;
         transition: all 0.2s ease;
     }
 
