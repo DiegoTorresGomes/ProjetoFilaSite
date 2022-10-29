@@ -200,23 +200,19 @@ button:hover{
         height: 13vh;
     }
     
+    .subtitulo{
+        display: block;
+        width: 60vh;
+        font-size: 18px;
+        margin: 5px auto;
+    }
+
     .grupo{
-        width: 10vh;
-        margin: 20px;
-        height: 100px;
-        display: flex;
-        padding: 10px;
+        margin: 5px auto;
+        width: 10px;
         background-color: #4473c4c0;
         border: 2px solid;
         border-radius: 20px;
-    }
-    
-    .nome{
-        padding: 20px 20px;    
-    }
-    
-    .sobrenome{
-        padding: 20px 20px;
     }
     
     .tipoAt{
