@@ -244,11 +244,11 @@ button:hover{
     
     .selecao{
         width: 150px;
-        margin: 10px 38vh;
+        margin: 10px 38.5vh;
     }
 
     button{
-        margin: 15px 36.5vh;
+        margin: 15px 37vh;
         transition: all 0.2s ease;
     }
 
