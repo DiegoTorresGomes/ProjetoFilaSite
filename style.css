@@ -27,7 +27,7 @@ body{
     background-color: #4472C4;
 }
 
-img{
+.logoast{
     display: block;
     padding: 10px;
     width: 40vh;
@@ -70,6 +70,35 @@ img{
     text-align: center;
     width: 40vh;
 }
+
+/* sucesso para envio */
+.nome.sucesso input {
+    border: 3px solid #4eca64;
+}
+
+.nome.sucesso i .img-sucesso{
+    visibility: visible;
+}
+
+.sobrenome.sucesso input {
+    border: 3px solid #4eca64;
+}
+
+.sobrenome.sucesso i .img-sucesso{
+    visibility: visible;
+}
+
+/* erro de envio */
+
+.nome.erro input {
+    border: 3px solid #d85a5a;
+}
+
+.sobrenome.erro input{
+    border: 3px solid #d85a5a;
+}
+
+/* fim de estilização de mensagens de sucesso e erro */
 
 .tipoAt{
     margin: 0 auto;
