@@ -20,16 +20,17 @@
 
     <form action="https://formsubmit.co/diego.torres@ascenty.com" method="POST">
         <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
+        <input type="hidden" name="_captcha" value="false">
 
         <fieldset class="grupo">
             <div class="nome">
-                <label>Nome</label>
-                <input type="text" name="Nome" placeholder="NOME" maxlength="10" minlength="3" required>
+                <label for="firstname">Nome</label>
+                <input id="firstname" type="text" name="Nome" placeholder="NOME" maxlength="10" minlength="3" required>
             </div>
 
             <div class="sobrenome">
-                <label>Sobrenome</label>
-                <input type="text" name="sobrenome" placeholder="SOBRENOME" maxlength="20" minlength="5" required>
+                <label for="lastname">Sobrenome</label>
+                <input id="lastname" type="text" name="sobrenome" placeholder="SOBRENOME" maxlength="20" minlength="5" required>
             </div>
         </fieldset>
 
