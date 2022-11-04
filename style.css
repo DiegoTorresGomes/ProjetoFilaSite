@@ -77,7 +77,7 @@ body{
 }
 
 .nome.sucesso i .img-sucesso{
-    visibility: visible;
+    visibility: none;
 }
 
 .sobrenome.sucesso input {
