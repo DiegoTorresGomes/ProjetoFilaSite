@@ -71,7 +71,44 @@ body{
     width: 40vh;
 }
 
+.nome input:hover{
+    transform: scale(1.05);
+}
+
+.sobrenome input:hover{
+    transform: scale(1.05);
+}
+
 /* sucesso para envio */
+.img-sucesso{
+    width: 20px;
+    height: 20px;
+}
+
+.img-erro{
+    width: 20px;
+    height: 20px;
+}
+
+
+/* inicio escondendo no msg su-err*/
+.nome i{
+    position: absolute;
+    visibility: hidden;
+}
+
+.sobrenome i{
+    position: absolute;
+    visibility: hidden;
+}
+
+.nome small, .sobrenome small {
+    display: inline-block;
+    visibility: hidden;
+}
+
+/* fim escondendo no msg su-err*/
+
 .nome.sucesso input {
     border: 3px solid #4eca64;
 }
@@ -106,6 +143,11 @@ body{
     visibility: visible;
 }
 
+.nome.erro small, .sobrenome.erro small{
+    visibility: visible;
+}
+
+
 /* fim de estilização de mensagens de sucesso e erro */
 
 .tipoAt{
@@ -129,102 +171,26 @@ body{
 }
 
 button{
-    margin: 30px 92vh;
-    transition: all 0.2s ease;
-}
-
-.button{
-    position: relative;
-    width: 180px;
-    height: 50px;
-    padding: 0 50px;
-    border-radius: 40px;
-    background: #4473c4c0;
+    margin: 30px 95vh;
+    background-color: #4472C4;
+    width: 150px;
+    height: 60px;
+    border-radius: 30px;
+    font-size: 18px;
     color: #ffffff;
-    overflow: hidden;
-    font-size: 20px;
-    font-weight: 500;
-    padding: 12px 35px;
-    white-space: nowrap;
     border: none;
-    cursor: pointer;
 }
 
-.button:focus{
-    animation: morph 1.25s forwards;
-}
-
-.button > * {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-}
-
-.plane {
-    display: none;
-}
-
-.send, .button:focus span{
-    opacity: 0;
-    visibility: hidden;
-}
-
-.button:focus .send{
-    animation: reveal 1s 1.25s forwards;
-}
-
-.button:focus .plane{
-    display: block;
-    animation: takeOff 1s forwards;
-}
 
 button:hover{
     transform: scale(1.05);
 }
 
 
-@keyframes reveal{
-    100%{
-        opacity: 1;
-        visibility: visible;
-    }
-}
-
-@keyframes morph {
-    10%,
-    80%{
-        width: 50px;
-        border-radius: 50%;
-        background: var(--skin-color);
-        color: white;
-    }
-    100%{
-        background: green;
-        color: white;
-    }
-}
-
-@keyframes takeOff{
-    5%, 15%, 25%, 35%, 45% {
-        transform: translate(-47%, -50%);
-    }
-    10%, 20%, 30%, 40%, 50% {
-        transform: translate(-53%, -50%);
-    }
-    90%{
-        transform: translate(100px, -100px);
-    }
-    100%{
-        transform: translate(100px, -100px);
-    }
-}
-
 @media (max-width: 821px){
     .logo{
         display: inline-block;
-        width: 80vh;
+        width: 70vh;
         height: 15vh;
         margin: 5px 10vh;
         border-radius: 1px 50px 1px 50px;
@@ -232,7 +198,7 @@ button:hover{
         
     }
     
-    img{
+    .logoast{
         padding: 8px;
         width: 38vh;
         height: 13vh;
@@ -251,29 +217,36 @@ button:hover{
 
     .grupo{
         display: inline-block;
-        margin: 8px 30vh;
-        width: 30vh;
-        height: 12vh;
+        margin: 5px 25vh;
+        width: 42vh;
+        height: 22vh;
         background-color: #4473c4c0;
         border: 2px solid;
         border-radius: 20px;
-        padding: 10px;
+        padding: 15px;
     }
 
     .nome{
         width: 50px;
-        margin: 10px 7vh;
+        display: inline-block;
+        margin: 2px 10vh;
         
     }
     
     .sobrenome{
         width: 50px;
-        margin: 10px 7vh;
+        display: inline-block;
+        margin: 2px 10vh;
         
     }
+    
+    #firstname, #lastname{
+        height: 28px;
+    }
+    
 
     .textoDeSelec{
-        margin: 20px 20vh;
+        margin: 10px 20vh;
         font-size: 22px;
         display: block;
     }
@@ -284,8 +257,7 @@ button:hover{
     }
 
     button{
-        margin: 15px 37vh;
-        transition: all 0.2s ease;
+        margin: 15px 38vh;
     }
 
     button:hover{

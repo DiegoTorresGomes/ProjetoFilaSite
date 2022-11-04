@@ -18,23 +18,23 @@
         <p class="subtitulo">Preencha os campos abaixo com o seu nome completo e qual é o seu tipo de visita, assim conseguiremos iniciar o seu atendimento.</p>
     </div>
 
-    <form action="https://formsubmit.co/diego.torres@ascenty.com" method="POST">
-        <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
+    <form id="form" action="https://formsubmit.co/diegotorresgomes@hotmail.com" method="POST">
+        <input type="hidden" name="_next" value="http://127.0.0.1:5500/obrigado.html">
         <input type="hidden" name="_captcha" value="false">
 
         <fieldset class="grupo">
-            <div class="nome sucesso">
+            <div class="nome">
                 <label for="firstname">Nome</label>
-                <input id="firstname" type="text" name="Nome" placeholder="NOME" maxlength="10" minlength="3" required>
+                <input id="firstname" type="text" name="Nome" autocomplete="off" placeholder="NOME" maxlength="10" minlength="3" required>
                 <i><img class="img-sucesso" src="./assets/success-icon.svg" alt=""></i>
                 <i><img class="img-erro" src="./assets/error-icon.svg" alt=""></i>
                 
                 <small>Mensagem de erro</small>
             </div>
 
-            <div class="sobrenome erro">
+            <div class="sobrenome">
                 <label for="lastname">Sobrenome</label>
-                <input id="lastname" type="text" name="sobrenome" placeholder="SOBRENOME" maxlength="20" minlength="5" required>
+                <input id="lastname" type="text" name="Sobrenome" autocomplete="off" placeholder="SOBRENOME" maxlength="20" minlength="5" required>
                 <i><img class="img-sucesso" src="./assets/success-icon.svg" alt=""></i>
                 <i><img class="img-erro" src="./assets/error-icon.svg" alt=""></i>
 
@@ -53,16 +53,12 @@
             </select>
         </div>
 
-        <button class="button" type="submit">
-            <span class="send">Enviado</span>
-            <i class="ri-send-plane-fill plane"></i>
-            <span class="sent">Enviar</span>
-        </button>
+        <button class="button" type="submit">Enviar</button>
         
 
     </form>
 
 
-    
+    <script src="./script.js"></script>
 </body>
 </html>
