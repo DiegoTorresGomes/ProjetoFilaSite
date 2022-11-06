@@ -18,3 +18,20 @@ p, h2{
     
 }
 
+p{
+    color: aliceblue;
+}
+
+button{
+    background-color: cornflowerblue;
+    border: none;
+    font-size: 16px;
+    margin: 35px;
+    width: 110px;
+    height: 40px;
+    border-radius: 30px;
+}
+
+button:hover{
+    transform: scale(1.05);
+}
