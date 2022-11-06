@@ -2,8 +2,8 @@ const form = document.getElementById('form');
 const firstName = document.getElementById('firstname');
 const lastName = document.getElementById('lastname');
 
-form.addEventListener('submit', (e) =>{
-    /* e.preventDefault() */
+form.addEventListener('submit', () =>{
+
 
     checkInputs()
 })
