@@ -186,6 +186,9 @@ button:hover{
     transform: scale(1.05);
 }
 
+textarea{
+    visibility: hidden;
+}
 
 @media (max-width: 821px){
     .logo{

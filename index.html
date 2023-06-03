@@ -12,7 +12,7 @@
 <body>
     <!-- <h1 style="text-align: center; font-weight: bolder;">404 NOT FOUND</h1> -->
 
-   <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <title>Atendimento Ascenty</title>
 </head>
@@ -32,8 +32,12 @@
 
     <form id="form" action="https://formsubmit.co/diego.torres@ascenty.com" method="POST">
         <input type="hidden" name="_next" value="https://diegotorresgomes.github.io/ProjetoFilaSite/obrigado.html">
-        <input type="hidden" name="_cc" value="seguranca.rio@ascenty.com,andrey.rodger@ascenty.com"> <!-- aqui é para colocar e-mails em cópia -->
-        <input type="hidden" name="_captcha" value="false">
+        <!--<input type="hidden" name="_cc" value="seguranca.rio@ascenty.com,andrey.rodger@ascenty.com"> --> <!-- aqui é para colocar e-mails em cópia -->
+        <input type="hidden" name="_cc" value="diegotorresgomes@hotmail.com">
+        <input type="hidden" name="_captcha" value="false"> <!--Tirar captcha-->
+        <input type="hidden" name="_template" value="box"> <!--Tipo de template enviado por e-mail no formsubmit-->
+        <input type="hidden" name="_subject" value="PROJETO FILA ASCENTY"> <!--Assunto do e-mail enviado-->
+        
 
         <fieldset class="grupo">
             <div class="nome">
@@ -44,10 +48,10 @@
                 
                 <small>Mensagem de erro</small>
             </div>
-
             <div class="sobrenome">
                 <label for="lastname">Sobrenome</label>
                 <input id="lastname" type="text" name="Sobrenome" autocomplete="off" placeholder="SOBRENOME" maxlength="20" minlength="5" required>
+                <textarea id="tipodevisita" type="hidden" name="Tipo de Visita" autocomplete="off" placeholder="tipodevisita" maxlength="20" minlength="5"></textarea> <!--Neste campo estou colocando o tipo de visita selecionada no selec - option-->
                 <i><img class="img-sucesso" src="./assets/success-icon.svg" alt=""></i>
                 <i><img class="img-erro" src="./assets/error-icon.svg" alt=""></i>
 
@@ -66,7 +70,7 @@
             </select>
         </div>
 
-        <button class="button" type="submit">Enviar</button>
+        <button id="botao" class="button" onclick="atualizouSelect()" type="submit">Enviar</button>
         
 
     </form>

@@ -5,7 +5,7 @@ const lastName = document.getElementById('lastname');
 form.addEventListener('submit', () =>{
 
 
-    checkInputs()
+    checkInputs();
 })
 
 function checkInputs() {
@@ -50,3 +50,18 @@ function successValidation(input){
     formControl2.className = 'sobrenome sucesso'
 
 }
+
+
+function atualizouSelect (){
+    let select = document.querySelector('.selecao');
+    let optionValue = select.options[select.selectedIndex];
+
+    let value = optionValue.value;
+
+    console.log(value)
+    document.querySelector('#tipodevisita').innerHTML = value;
+}
+
+atualizouSelect()
+
+
